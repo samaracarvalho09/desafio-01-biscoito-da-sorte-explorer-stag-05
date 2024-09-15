@@ -8,44 +8,40 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>Biscoito da Sorte</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href="style.css" />
-    <!-- <script src="./main.js" defer></script> -->
+    <script type="module" src="./main.js" defer></script>
   </head>
   <body>
     <main>
-      <!-- Biscoito fechado -->
-      <div class="container-abra-descubra">
+      <div class="initial-screen">
         <h2>Qual é a sua sorte de hoje?</h2>
         <span>Abra o biscoito e descubra!</span>
-        <button class="btn-biscoito-sorte">
+        <button class="fortune-cookie-button">
           <img
-            id="btnBiscoitoSorte"
-            class="img-biscoito-sorte"
+            id="closedCookieImage"
+            class="cookie-image"
             src="./assets/biscoito-sorte.svg"
             alt="ilustração de um biscoito da sorte fechado"
           />
         </button>
       </div>
 
-      <!-- Biscoito aberto -->
-      <div class="container-mensagem hide">
+      <div class="message-screen hide">
         <h2>Aqui está a sua sorte de hoje:</h2>
-        <div class="container-mensagem-sorte">
-          <p id="mensagem-sorte">
-          </p>
+        <div class="message-box">
+          <p id="fortuneMessage"></p>
         </div>
         <img
-          class="img-biscoito-sorte"
+          class="cookie-image"
           src="./assets/biscoito-sorte-aberto.svg"
           alt="ilustração de um biscoito da sorte aberto"
         />
-        <button id="btnAnotherMessage" class="btn-abrir-biscoito">
+        <button id="newFortuneButton" class="new-cookie-button">
           Abrir outro biscoito
         </button>
       </div>
     </main>
-    <script src="main.js"></script>
   </body>
 </html>

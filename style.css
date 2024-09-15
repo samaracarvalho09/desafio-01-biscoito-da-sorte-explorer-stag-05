@@ -12,7 +12,6 @@ body {
   align-items: center;
 
   background: linear-gradient(45deg, #190361 0%, #bb00ff 100%);
-  background: linear-gradient(45deg, #190361, #bb00ff);
   animation: gradient 10s ease infinite;
   background-size: 200% 200%;
 }
@@ -21,15 +20,18 @@ body {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
 }
-.container-abra-descubra,
-.container-mensagem {
+
+.initial-screen,
+.message-screen {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -54,7 +56,7 @@ h2 {
   text-align: center;
 }
 
-.container-abra-descubra span {
+.initial-screen span {
   font-family: "DM Sans";
   font-size: 15px;
   line-height: 20px;
@@ -62,7 +64,7 @@ h2 {
   margin-block: 14px 20px;
 }
 
-.btn-biscoito-sorte {
+.fortune-cookie-button {
   border: none;
   outline: none;
   background: transparent;
@@ -70,22 +72,22 @@ h2 {
   cursor: pointer;
 }
 
-.img-biscoito-sorte {
+.cookie-image {
   width: 300px;
   height: 200px;
 }
 
-.container-mensagem {
+.message-screen {
   gap: 17px;
 }
 
-.container-mensagem-sorte {
+.message-box {
   background: #e4edf1;
   box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
   padding: 10px;
 }
 
-.container-mensagem-sorte p {
+.message-box p {
   font-family: "Dancing Script";
   font-size: 24px;
   line-height: 29px;
@@ -93,7 +95,7 @@ h2 {
   color: #000;
 }
 
-.btn-abrir-biscoito {
+.new-cookie-button {
   width: 174px;
   height: 52px;
 
@@ -115,24 +117,61 @@ h2 {
   display: none;
 }
 
-@keyframes shake {
+@keyframes tremer {
   0% {
-    transform: rotate(0deg);
+    transform: translate(1px, 1px) rotate(0deg);
   }
-  25% {
-    transform: rotate(-10deg);
+
+  10% {
+    transform: translate(-1px, -2px) rotate(-1deg);
   }
+
+  20% {
+    transform: translate(-3px, 0px) rotate(1deg);
+  }
+
+  30% {
+    transform: translate(3px, 2px) rotate(0deg);
+  }
+
+  40% {
+    transform: translate(1px, -1px) rotate(1deg);
+  }
+
   50% {
-    transform: rotate(10deg);
+    transform: translate(-1px, 2px) rotate(-1deg);
   }
-  75% {
-    transform: rotate(-10deg);
+
+  60% {
+    transform: translate(-3px, 1px) rotate(0deg);
   }
+
+  70% {
+    transform: translate(3px, 1px) rotate(-1deg);
+  }
+
+  80% {
+    transform: translate(-1px, -1px) rotate(1deg);
+  }
+
+  90% {
+    transform: translate(1px, 2px) rotate(0deg);
+  }
+
   100% {
-    transform: rotate(0deg);
+    transform: translate(1px, -2px) rotate(-1deg);
   }
 }
 
-.shake {
-  animation: shake 1.2s ease-in-out;
+.fortune-cookie-button {
+  transition: transform 0.3s ease;
+}
+
+.fortune-cookie-button:hover {
+  transform: scale(1.05);
+}
+
+.fortune-cookie-button.tremer {
+  animation: tremer 0.8s ease;
+  animation-iteration-count: 1;
 }
