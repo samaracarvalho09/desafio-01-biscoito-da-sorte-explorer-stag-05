@@ -79,13 +79,13 @@ h2 {
   gap: 17px;
 }
 
-.mensagem-sorte {
+.container-mensagem-sorte {
   background: #e4edf1;
   box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
   padding: 10px;
 }
 
-.mensagem-sorte p {
+.container-mensagem-sorte p {
   font-family: "Dancing Script";
   font-size: 24px;
   line-height: 29px;
