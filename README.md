@@ -1,5 +1,5 @@
 <h1 align="center" style="color: #E9967A">Biscoito da Sorte</h1>
-<p align="center" style="color: #DEB887; font-size:16px; font-weight: bold">Projeto Interativo Web</p>
+<p align="center" style="color: #DEB887; font-size:16px; font-weight: bold">Desafio 01: Biscoito da sorte</p>
 
 <p align="center">
   <a href="#tecnologias" style="color: #FFA07A">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -39,12 +39,12 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - Interface intuitiva com duas telas: inicial e de mensagem
 - Animação de abertura do biscoito
-- Exibição de mensagens de fortuna aleatórias
+- Exibição de mensagens da sorte aleatórias
 - Opção para abrir um novo biscoito e receber outra mensagem
 
 <h2 id="projeto" style="color: #CD853F">💻 Projeto</h2>
 
-O Biscoito da Sorte é uma aplicação web interativa que simula a experiência de abrir um biscoito da sorte e receber uma mensagem de fortuna. Os usuários podem clicar em um biscoito virtual para revelar uma mensagem aleatória e têm a opção de abrir um novo biscoito para receber outra mensagem.
+O Biscoito da Sorte é uma aplicação web interativa que simula a experiência de abrir um biscoito e receber uma mensagem da sorte. Os usuários podem clicar em um biscoito virtual para revelar uma mensagem aleatória e têm a opção de abrir um novo biscoito para receber outra mensagem.
 
 <h2 id="como-executar" style="color: #CD853F">🔖 Como executar</h2>
 
